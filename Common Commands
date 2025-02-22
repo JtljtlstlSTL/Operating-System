@@ -1,0 +1,17 @@
+sudo apt(-get) update
+
+sudo apt(-get) install Name
+
+cd Name of File
+
+upzip Name of File
+
+vi Name of File
+vim Name of File(部分系统没有vim)
+
+mkdir	Name of File创建目录 e.g.mkdir mydir
+rmdir Name of File创建空目录
+
+rm	Name of File删除文件或目录。常用选项：-r（递归删除）、-f（强制删除）
+cp	复制文件或目录。例如：cp file1 file2
+mv	移动或重命名文件或目录。例如：mv file1 file2
