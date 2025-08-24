@@ -19,7 +19,7 @@
   emacs name.格式(e.g.reverse.c)
   ```bash
      emacs reverse.c
- ```
+  ```
     some operation: ctrl+x,ctrl+s:save
                     ctrl+x,ctrl+c:exit
 
@@ -33,11 +33,11 @@
     reverse.c: 这是你要编译的 C 语言源代码文件。
     -Wall: 这个选项告诉编译器启用所有常见的警告信息。它可以帮助你发现代码中的潜在问题。
 
-3. 修改文件 test-reverse.sh 的权限，使其对所有用户（所有者、组用户和其他用户）都具有读、写和执行的权限
+3.修改文件 test-reverse.sh 的权限，使其对所有用户（所有者、组用户和其他用户）都具有读、写和执行的权限
   ```bash
      sudo chmod 777 test −reverse . sh
  ```
-4. 运行一个名为 test-reverse.sh 的脚本文件
+4.运行一个名为 test-reverse.sh 的脚本文件
   ```bash
     ./test-reverse.sh
  ```
