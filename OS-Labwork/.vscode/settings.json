@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "user.h": "c",
+        "system_error": "c",
+        "file.h": "c",
+        "sleeplock.h": "c",
+        "spinlock.h": "c",
+        "types.h": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "streambuf": "c",
+        "mapreduce.h": "c",
+        "pthread.h": "c"
+    }
+}

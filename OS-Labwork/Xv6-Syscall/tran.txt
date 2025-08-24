@@ -1,0 +1,22 @@
+对你的系统调用进行测试很简单。只需在 initial-xv6 目录内执行以下操作：
+plaintext
+prompt> ./test-getreadcount.sh
+
+如果你正确实现了相关功能，你应该会收到一些测试通过的通知。如果没有……
+测试脚本假定 xv6 源代码位于 src/ 子目录中。如果不在那里，脚本会报错。
+测试脚本会使用一个新生成的名为 Makefile.test 的 makefile 对你的 xv6 源代码进行一次性的干净构建。在调试时（假设你确实犯了错误的话）你可以使用它，例如：
+plaintext
+prompt> cd src/
+prompt> make -f Makefile.test qemu-nox
+
+你可以使用 -s 标志来抑制测试中对 xv6 的重复构建。这应该会使重复测试的速度更快：
+plaintext
+prompt> ./test-getreadcount.sh -s
+
+
+你新添加的系统调用应具有以下返回值和参数：
+
+int getreadcount(void)
+
+你的系统调用将返回一个计数器（或许可以命名为 readcount 之类的名称）的值，每当有任何进程调用 read() 系统调用时，该计数器就会递增。就是这么简单！
+

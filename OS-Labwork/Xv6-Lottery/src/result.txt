@@ -1,0 +1,608 @@
+czy@czy-virtual-machine:~/FormalOS/Xv6-Lottery/xv6-public$ make qemu
+qemu-system-i386 -serial mon:stdio -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp 2 -m 512 
+xv6...
+cpu0: starting 0
+sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$ tester
+Process 6 set tickets to 50
+Process 4 set tickets to 30
+Process 7 set tickets to 60
+Process 9 set tickets to 80
+Process 8 set tickets to 70
+Process Info at time 0:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 1
+PID: 4, Tickets: 30, Ticks: 64
+PID: 6, Tickets: 50, Ticks: 86
+PID: 7, Tickets: 60, Ticks: 86
+PID: 8, Tickets: 70, Ticks: 34
+PID: 9, Tickets: 80, Ticks: 93
+
+Process Info at time 50:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 2
+PID: 4, Tickets: 30, Ticks: 68
+PID: 6, Tickets: 50, Ticks: 103
+PID: 7, Tickets: 60, Ticks: 104
+PID: 8, Tickets: 70, Ticks: 54
+PID: 9, Tickets: 80, Ticks: 109
+
+Process 10 set tickets to 90
+Process Info at time 100:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 3
+PID: 4, Tickets: 30, Ticks: 75
+Process 5 set tickets to 40
+PID: 6, Tickets: 50, Ticks: 124
+PID: 7, Tickets: 60, Ticks: 116
+PID: 8, Tickets: 70, Ticks: 63
+PID: 9, Tickets: 80, Ticks: 132
+PID: 10, Tickets: 90, Ticks: 17
+
+Process Info at time 150:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 5
+PID: 4, Tickets: 30, Ticks: 140
+PID: 5, Tickets: 40, Ticks: 45
+PID: 6, Tickets: 50, Ticks: 215
+PID: 7, Tickets: 60, Ticks: 236
+PID: 8, Tickets: 70, Ticks: 211
+PID: 9, Tickets: 80, Ticks: 291
+PID: 10, Tickets: 90, Ticks: 175
+
+Process Info at time 200:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 7
+PID: 4, Tickets: 30, Ticks: 157
+PID: 5, Tickets: 40, Ticks: 62
+PID: 6, Tickets: 50, Ticks: 243
+PID: 7, Tickets: 60, Ticks: 279
+PID: 8, Tickets: 70, Ticks: 244
+PID: 9, Tickets: 80, Ticks: 344
+PID: 10, Tickets: 90, Ticks: 226
+
+Process Info at time 250:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 9
+PID: 4, Tickets: 30, Ticks: 177
+PID: 5, Tickets: 40, Ticks: 97
+PID: 6, Tickets: 50, Ticks: 283
+PID: 7, Tickets: 60, Ticks: 330
+PID: 8, Tickets: 70, Ticks: 298
+PID: 9, Tickets: 80, Ticks: 413
+PID: 10, Tickets: 90, Ticks: 285
+
+Process Info at time 300:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 11
+PID: 4, Tickets: 30, Ticks: 225
+PID: 5, Tickets: 40, Ticks: 152
+PID: 6, Tickets: 50, Ticks: 358
+PID: 7, Tickets: 60, Ticks: 432
+PID: 8, Tickets: 70, Ticks: 430
+PID: 9, Tickets: 80, Ticks: 555
+PID: 10, Tickets: 90, Ticks: 426
+
+Process Info at time 350:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 12
+PID: 4, Tickets: 30, Ticks: 314
+PID: 5, Tickets: 40, Ticks: 254
+PID: 6, Tickets: 50, Ticks: 497
+PID: 7, Tickets: 60, Ticks: 577
+PID: 8, Tickets: 70, Ticks: 644
+PID: 9, Tickets: 80, Ticks: 789
+PID: 10, Tickets: 90, Ticks: 673
+
+Process Info at time 400:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 13
+PID: 4, Tickets: 30, Ticks: 334
+PID: 5, Tickets: 40, Ticks: 279
+PID: 6, Tickets: 50, Ticks: 528
+PID: 7, Tickets: 60, Ticks: 627
+PID: 8, Tickets: 70, Ticks: 694
+PID: 9, Tickets: 80, Ticks: 836
+PID: 10, Tickets: 90, Ticks: 729
+
+Process Info at time 450:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 15
+PID: 4, Tickets: 30, Ticks: 397
+PID: 5, Tickets: 40, Ticks: 361
+PID: 6, Tickets: 50, Ticks: 645
+PID: 7, Tickets: 60, Ticks: 743
+PID: 8, Tickets: 70, Ticks: 799
+PID: 9, Tickets: 80, Ticks: 988
+PID: 10, Tickets: 90, Ticks: 913
+
+Process Info at time 500:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 16
+PID: 4, Tickets: 30, Ticks: 407
+PID: 5, Tickets: 40, Ticks: 374
+PID: 6, Tickets: 50, Ticks: 666
+PID: 7, Tickets: 60, Ticks: 762
+PID: 8, Tickets: 70, Ticks: 827
+PID: 9, Tickets: 80, Ticks: 1011
+PID: 10, Tickets: 90, Ticks: 938
+
+Process Info at time 550:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 18
+PID: 4, Tickets: 30, Ticks: 494
+PID: 5, Tickets: 40, Ticks: 476
+PID: 6, Tickets: 50, Ticks: 818
+PID: 7, Tickets: 60, Ticks: 931
+PID: 8, Tickets: 70, Ticks: 1024 
+PID: 9, Tickets: 80, Ticks: 1216
+PID: 10, Tickets: 90, Ticks: 1164
+
+Process Info at time 600:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 19
+PID: 4, Tickets: 30, Ticks: 552
+PID: 5, Tickets: 40, Ticks: 572
+PID: 6, Tickets: 50, Ticks: 908
+PID: 7, Tickets: 60, Ticks: 1048
+PID: 8, Tickets: 70, Ticks: 1142
+PID: 9, Tickets: 80, Ticks: 1381
+PID: 10, Tickets: 90, Ticks: 1329
+
+Process Info at time 650:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 21
+PID: 4, Tickets: 30, Ticks: 618
+PID: 5, Tickets: 40, Ticks: 655
+PID: 6, Tickets: 50, Ticks: 1008
+PID: 7, Tickets: 60, Ticks: 1187
+PID: 8, Tickets: 70, Ticks: 1270
+PID: 9, Tickets: 80, Ticks: 1551
+PID: 10, Tickets: 90, Ticks: 1500
+
+Process Info at time 700:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 23
+PID: 4, Tickets: 30, Ticks: 644
+PID: 5, Tickets: 40, Ticks: 692
+PID: 6, Tickets: 50, Ticks: 1040
+PID: 7, Tickets: 60, Ticks: 1250
+PID: 8, Tickets: 70, Ticks: 1328
+PID: 9, Tickets: 80, Ticks: 1628
+PID: 10, Tickets: 90, Ticks: 1588
+
+Process Info at time 750:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 25
+PID: 4, Tickets: 30, Ticks: 719
+PID: 5, Tickets: 40, Ticks: 791
+PID: 6, Tickets: 50, Ticks: 1152
+PID: 7, Tickets: 60, Ticks: 1411
+PID: 8, Tickets: 70, Ticks: 1508
+PID: 9, Tickets: 80, Ticks: 1836
+PID: 10, Tickets: 90, Ticks: 1809
+
+Process Info at time 800:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 27
+PID: 4, Tickets: 30, Ticks: 785
+PID: 5, Tickets: 40, Ticks: 892
+PID: 6, Tickets: 50, Ticks: 1274
+PID: 7, Tickets: 60, Ticks: 1561
+PID: 8, Tickets: 70, Ticks: 1720
+PID: 9, Tickets: 80, Ticks: 2071
+PID: 10, Tickets: 90, Ticks: 2041
+
+Process Info at time 850:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 29
+PID: 4, Tickets: 30, Ticks: 835
+PID: 5, Tickets: 40, Ticks: 979
+PID: 6, Tickets: 50, Ticks: 1381
+PID: 7, Tickets: 60, Ticks: 1674
+PID: 8, Tickets: 70, Ticks: 1860
+PID: 9, Tickets: 80, Ticks: 2238
+PID: 10, Tickets: 90, Ticks: 2201
+
+Process Info at time 900:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 31
+PID: 4, Tickets: 30, Ticks: 865
+PID: 5, Tickets: 40, Ticks: 1033
+PID: 6, Tickets: 50, Ticks: 1452
+PID: 7, Tickets: 60, Ticks: 1746
+PID: 8, Tickets: 70, Ticks: 1930
+PID: 9, Tickets: 80, Ticks: 2329
+PID: 10, Tickets: 90, Ticks: 2311
+
+Process Info at time 950:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 33
+PID: 4, Tickets: 30, Ticks: 934
+PID: 5, Tickets: 40, Ticks: 1107
+PID: 6, Tickets: 50, Ticks: 1543
+PID: 7, Tickets: 60, Ticks: 1841
+PID: 8, Tickets: 70, Ticks: 2038
+PID: 9, Tickets: 80, Ticks: 2462
+PID: 10, Tickets: 90, Ticks: 2469
+
+Process Info at time 1000:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 35
+PID: 4, Tickets: 30, Ticks: 1004
+PID: 5, Tickets: 40, Ticks: 1217
+PID: 6, Tickets: 50, Ticks: 1662
+PID: 7, Tickets: 60, Ticks: 1993
+PID: 8, Tickets: 70, Ticks: 2198
+PID: 9, Tickets: 80, Ticks: 2667
+PID: 10, Tickets: 90, Ticks: 2676
+
+Process Info at time 1050:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 37
+PID: 4, Tickets: 30, Ticks: 1062
+PID: 5, Tickets: 40, Ticks: 1301
+PID: 6, Tickets: 50, Ticks: 1751
+PID: 7, Tickets: 60, Ticks: 2113
+PID: 8, Tickets: 70, Ticks: 2339
+PID: 9, Tickets: 80, Ticks: 2805
+PID: 10, Tickets: 90, Ticks: 2833
+
+Process Info at time 1100:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 39
+PID: 4, Tickets: 30, Ticks: 1143
+PID: 5, Tickets: 40, Ticks: 1434
+PID: 6, Tickets: 50, Ticks: 1900
+PID: 7, Tickets: 60, Ticks: 2293
+PID: 8, Tickets: 70, Ticks: 2567
+PID: 9, Tickets: 80, Ticks: 3028
+PID: 10, Tickets: 90, Ticks: 3108
+
+Process Info at time 1150:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 41
+PID: 4, Tickets: 30, Ticks: 1206
+PID: 5, Tickets: 40, Ticks: 1505
+PID: 6, Tickets: 50, Ticks: 1995
+PID: 7, Tickets: 60, Ticks: 2399
+PID: 8, Tickets: 70, Ticks: 2682
+PID: 9, Tickets: 80, Ticks: 3159
+PID: 10, Tickets: 90, Ticks: 3255
+
+Process Info at time 1200:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 42
+PID: 4, Tickets: 30, Ticks: 1212
+PID: 5, Tickets: 40, Ticks: 1514
+PID: 6, Tickets: 50, Ticks: 2006
+PID: 7, Tickets: 60, Ticks: 2413
+PID: 8, Tickets: 70, Ticks: 2698
+PID: 9, Tickets: 80, Ticks: 3186
+PID: 10, Tickets: 90, Ticks: 3278
+
+Process Info at time 1250:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 44
+PID: 4, Tickets: 30, Ticks: 1250
+PID: 5, Tickets: 40, Ticks: 1583
+PID: 6, Tickets: 50, Ticks: 2105
+PID: 7, Tickets: 60, Ticks: 2530
+PID: 8, Tickets: 70, Ticks: 2818
+PID: 9, Tickets: 80, Ticks: 3348
+PID: 10, Tickets: 90, Ticks: 3435
+
+Process Info at time 1300:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 46
+PID: 4, Tickets: 30, Ticks: 1289
+PID: 5, Tickets: 40, Ticks: 1644
+PID: 6, Tickets: 50, Ticks: 2180
+PID: 7, Tickets: 60, Ticks: 2609
+PID: 8, Tickets: 70, Ticks: 2954
+PID: 9, Tickets: 80, Ticks: 3486
+PID: 10, Tickets: 90, Ticks: 3569
+
+Process Info at time 1350:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 47
+PID: 4, Tickets: 30, Ticks: 1344
+PID: 5, Tickets: 40, Ticks: 1736
+PID: 6, Tickets: 50, Ticks: 2287
+PID: 7, Tickets: 60, Ticks: 2730
+PID: 8, Tickets: 70, Ticks: 3076
+PID: 9, Tickets: 80, Ticks: 3663
+PID: 10, Tickets: 90, Ticks: 3745
+
+Process Info at time 1400:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 49
+PID: 4, Tickets: 30, Ticks: 1382
+PID: 5, Tickets: 40, Ticks: 1773
+PID: 6, Tickets: 50, Ticks: 2341
+PID: 7, Tickets: 60, Ticks: 2795
+PID: 8, Tickets: 70, Ticks: 3155
+PID: 9, Tickets: 80, Ticks: 3747
+PID: 10, Tickets: 90, Ticks: 3832
+
+Process Info at time 1450:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 51
+PID: 4, Tickets: 30, Ticks: 1485
+PID: 5, Tickets: 40, Ticks: 1916
+PID: 6, Tickets: 50, Ticks: 2515
+PID: 7, Tickets: 60, Ticks: 3016
+PID: 8, Tickets: 70, Ticks: 3414
+PID: 9, Tickets: 80, Ticks: 4047
+PID: 10, Tickets: 90, Ticks: 4150
+
+Process Info at time 1500:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 53
+PID: 4, Tickets: 30, Ticks: 1566
+PID: 5, Tickets: 40, Ticks: 2004
+PID: 6, Tickets: 50, Ticks: 2651
+PID: 7, Tickets: 60, Ticks: 3182
+PID: 8, Tickets: 70, Ticks: 3617
+PID: 9, Tickets: 80, Ticks: 4253
+PID: 10, Tickets: 90, Ticks: 4379
+
+Process Info at time 1550:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 55
+PID: 4, Tickets: 30, Ticks: 1672
+PID: 5, Tickets: 40, Ticks: 2154
+PID: 6, Tickets: 50, Ticks: 2814
+PID: 7, Tickets: 60, Ticks: 3426
+PID: 8, Tickets: 70, Ticks: 3834
+PID: 9, Tickets: 80, Ticks: 4500
+PID: 10, Tickets: 90, Ticks: 4702
+
+Process Info at time 1600:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 56
+PID: 4, Tickets: 30, Ticks: 1707
+PID: 5, Tickets: 40, Ticks: 2190
+PID: 6, Tickets: 50, Ticks: 2878
+PID: 7, Tickets: 60, Ticks: 3486
+PID: 8, Tickets: 70, Ticks: 3904
+PID: 9, Tickets: 80, Ticks: 4585
+PID: 10, Tickets: 90, Ticks: 4788
+
+Process Info at time 1650:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 58
+PID: 4, Tickets: 30, Ticks: 1722
+PID: 5, Tickets: 40, Ticks: 2206
+PID: 6, Tickets: 50, Ticks: 2901
+PID: 7, Tickets: 60, Ticks: 3517
+PID: 8, Tickets: 70, Ticks: 3943
+PID: 9, Tickets: 80, Ticks: 4622
+PID: 10, Tickets: 90, Ticks: 4845
+
+Process Info at time 1700:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 60
+PID: 4, Tickets: 30, Ticks: 1744
+PID: 5, Tickets: 40, Ticks: 2239
+PID: 6, Tickets: 50, Ticks: 2938
+PID: 7, Tickets: 60, Ticks: 3553
+PID: 8, Tickets: 70, Ticks: 3991
+PID: 9, Tickets: 80, Ticks: 4690
+PID: 10, Tickets: 90, Ticks: 4928
+
+Process Info at time 1750:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 62
+PID: 4, Tickets: 30, Ticks: 1778
+PID: 5, Tickets: 40, Ticks: 2288
+PID: 6, Tickets: 50, Ticks: 3011
+PID: 7, Tickets: 60, Ticks: 3631
+PID: 8, Tickets: 70, Ticks: 4090
+PID: 9, Tickets: 80, Ticks: 4792
+PID: 10, Tickets: 90, Ticks: 5052
+
+Process Info at time 1800:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 64
+PID: 4, Tickets: 30, Ticks: 1813
+PID: 5, Tickets: 40, Ticks: 2342
+PID: 6, Tickets: 50, Ticks: 3066
+PID: 7, Tickets: 60, Ticks: 3686
+PID: 8, Tickets: 70, Ticks: 4177
+PID: 9, Tickets: 80, Ticks: 4882
+PID: 10, Tickets: 90, Ticks: 5167
+
+Process Info at time 1850:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 66
+PID: 4, Tickets: 30, Ticks: 1886
+PID: 5, Tickets: 40, Ticks: 2420
+PID: 6, Tickets: 50, Ticks: 3175
+PID: 7, Tickets: 60, Ticks: 3792
+PID: 8, Tickets: 70, Ticks: 4334
+PID: 9, Tickets: 80, Ticks: 5058
+PID: 10, Tickets: 90, Ticks: 5404
+
+Process Info at time 1900:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 68
+PID: 4, Tickets: 30, Ticks: 1899
+PID: 5, Tickets: 40, Ticks: 2428
+PID: 6, Tickets: 50, Ticks: 3186
+PID: 7, Tickets: 60, Ticks: 3809
+PID: 8, Tickets: 70, Ticks: 4357
+PID: 9, Tickets: 80, Ticks: 5081
+PID: 10, Tickets: 90, Ticks: 5426
+
+Process Info at time 1950:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 70
+PID: 4, Tickets: 30, Ticks: 1939
+PID: 5, Tickets: 40, Ticks: 2483
+PID: 6, Tickets: 50, Ticks: 3253
+PID: 7, Tickets: 60, Ticks: 3887
+PID: 8, Tickets: 70, Ticks: 4440
+PID: 9, Tickets: 80, Ticks: 5198
+PID: 10, Tickets: 90, Ticks: 5551
+
+Process Info at time 2000:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 72
+PID: 4, Tickets: 30, Ticks: 1980
+PID: 5, Tickets: 40, Ticks: 2541
+PID: 6, Tickets: 50, Ticks: 3320
+PID: 7, Tickets: 60, Ticks: 3962
+PID: 8, Tickets: 70, Ticks: 4546
+PID: 9, Tickets: 80, Ticks: 5309
+PID: 10, Tickets: 90, Ticks: 5658
+
+Process Info at time 2050:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 73
+PID: 4, Tickets: 30, Ticks: 1995
+PID: 5, Tickets: 40, Ticks: 2575
+PID: 6, Tickets: 50, Ticks: 3348
+PID: 7, Tickets: 60, Ticks: 4008
+PID: 8, Tickets: 70, Ticks: 4590
+PID: 9, Tickets: 80, Ticks: 5358
+PID: 10, Tickets: 90, Ticks: 5701
+
+Process Info at time 2100:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 75
+PID: 4, Tickets: 30, Ticks: 2012
+PID: 5, Tickets: 40, Ticks: 2609
+PID: 6, Tickets: 50, Ticks: 3372
+PID: 7, Tickets: 60, Ticks: 4060
+PID: 8, Tickets: 70, Ticks: 4638
+PID: 9, Tickets: 80, Ticks: 5411
+PID: 10, Tickets: 90, Ticks: 5770
+
+Process Info at time 2150:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 77
+PID: 4, Tickets: 30, Ticks: 2059
+PID: 5, Tickets: 40, Ticks: 2677
+PID: 6, Tickets: 50, Ticks: 3453
+PID: 7, Tickets: 60, Ticks: 4150
+PID: 8, Tickets: 70, Ticks: 4730
+PID: 9, Tickets: 80, Ticks: 5529
+PID: 10, Tickets: 90, Ticks: 5894
+
+Process Info at time 2200:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 79
+PID: 4, Tickets: 30, Ticks: 2088
+PID: 5, Tickets: 40, Ticks: 2715
+PID: 6, Tickets: 50, Ticks: 3500
+PID: 7, Tickets: 60, Ticks: 4218
+PID: 8, Tickets: 70, Ticks: 4795
+PID: 9, Tickets: 80, Ticks: 5620
+PID: 10, Tickets: 90, Ticks: 5985
+
+Process Info at time 2250:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 81
+PID: 4, Tickets: 30, Ticks: 2116
+PID: 5, Tickets: 40, Ticks: 2763
+PID: 6, Tickets: 50, Ticks: 3553
+PID: 7, Tickets: 60, Ticks: 4285
+PID: 8, Tickets: 70, Ticks: 4873
+PID: 9, Tickets: 80, Ticks: 5712
+PID: 10, Tickets: 90, Ticks: 6070
+
+Process Info at time 2300:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 83
+PID: 4, Tickets: 30, Ticks: 2156
+PID: 5, Tickets: 40, Ticks: 2814
+PID: 6, Tickets: 50, Ticks: 3614
+PID: 7, Tickets: 60, Ticks: 4355
+PID: 8, Tickets: 70, Ticks: 4980
+PID: 9, Tickets: 80, Ticks: 5837
+PID: 10, Tickets: 90, Ticks: 6197
+
+Process Info at time 2350:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 85
+PID: 4, Tickets: 30, Ticks: 2207
+PID: 5, Tickets: 40, Ticks: 2887
+PID: 6, Tickets: 50, Ticks: 3713
+PID: 7, Tickets: 60, Ticks: 4462
+PID: 8, Tickets: 70, Ticks: 5096
+PID: 9, Tickets: 80, Ticks: 6000
+PID: 10, Tickets: 90, Ticks: 6357
+
+Process Info at time 2400:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 87
+PID: 4, Tickets: 30, Ticks: 2271
+PID: 5, Ticets: 40, Ticks: 2994
+PID: 6, Tickets: 50, Ticks: 3842
+PID: 7, Tickets: 60, Ticks: 4619
+PID: 8, Tickets: 70, Ticks: 5270
+PID: 9, Tickets: 80, Ticks: 6221
+PID: 10, Tickets: 90, Ticks: 6584
+
+Process Info at time 2450:
+PID: 1, Tickets: 1, Ticks: 0
+PID: 2, Tickets: 1, Ticks: 0
+PID: 3, Tickets: 1, Ticks: 89
+PID: 4, Tickets: 30, Ticks: 2309
+PID: 5, Tickets: 40, Ticks: 3048
+PID: 6, Tickets: 50, Ticks: 3912
+PID: 7, Tickets: 60, Ticks: 4685
+PID: 8, Tickets: 70, Ticks: 5379
+PID: 9, Tickets: 80, Ticks: 6325
+PID: 10, Tickets: 90, Ticks: 6711
