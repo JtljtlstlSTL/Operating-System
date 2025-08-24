@@ -1,4 +1,4 @@
-# 数模实验环境与C程序运行说明
+# 操作系统实验环境与C程序运行说明
 
 本项目在 **Linux 环境（WSL 或虚拟机）** 下进行操作系统实验
 
@@ -19,13 +19,14 @@
   emacs name.格式(e.g.reverse.c)
   ```bash
      emacs reverse.c
+ ```
     some operation: ctrl+x,ctrl+s:save
                     ctrl+x,ctrl+c:exit
 
 2.运行该程序
   ```bash
      gcc -o reverse reverse.c -Wall
-
+ ```
   这个命令是用于编译 C 语言源代码文件 reverse.c，并生成一个名为 reverse 的可执行文件。具体解释如下：
     gcc: GNU Compiler Collection 的缩写，是一个常用的 C 语言编译器。
     -o reverse: -o 选项用于指定生成的可执行文件的名称。在这里，生成的可执行文件将被命名为 reverse。
@@ -35,9 +36,10 @@
 3. 修改文件 test-reverse.sh 的权限，使其对所有用户（所有者、组用户和其他用户）都具有读、写和执行的权限
   ```bash
      sudo chmod 777 test −reverse . sh
-
-  运行一个名为 test-reverse.sh 的脚本文件
+ ```
+4. 运行一个名为 test-reverse.sh 的脚本文件
   ```bash
     ./test-reverse.sh
+ ```
       PS。如果 test-reverse.sh 文件没有执行权限，运行时会报错：Permission denied
           你需要为文件添加执行权限。可以使用以下命令：chmod +x test-reverse.sh
