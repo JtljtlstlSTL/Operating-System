@@ -49,4 +49,4 @@
     ./test-reverse.sh
  ```
       PS.如果 test-reverse.sh 文件没有执行权限，运行时会报错：Permission denied
-          你需要为文件添加执行权限。可以使用以下命令：chmod +x test-reverse.sh
+          你可以只为文件添加执行权限。可以使用以下命令：chmod +x test-reverse.sh
